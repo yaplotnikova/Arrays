@@ -3,12 +3,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Введите размер массива: ");
+        System.out.println("Enter arrays size ");
         int size = scan.nextInt();
         int[] inputArray = new int[size];
 
         for (int i = 0; i < inputArray.length; i++) {
-            System.out.println("Введите числа: ");
+            System.out.println("Enter value: ");
             inputArray[i] = scan.nextInt();
         }
         System.out.print("inputArray: ");
