@@ -10,13 +10,13 @@ public class Magazine implements Printable {
     }
 
     public void print() {
-        System.out.println("This is a magazine! ");
+        System.out.println("This is a magazine! "+magazineName);
     }
 
     public static void printMagazines(List<Printable> printable) {
         for (Printable x : printable) {
-            if (printable instanceof Magazine) {
-                ((Magazine) printable).print();
+            if (x instanceof Magazine) {
+               x.print();
             }
         }
     }

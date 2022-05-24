@@ -24,11 +24,13 @@ public class Main {
         for (Printable x : shopList) {
             x.print();
         }
-        System.out.println(book1 instanceof Book);
-        System.out.println(book2 instanceof Book);
-        System.out.println(book3 instanceof Book);
-        System.out.println(magazine1 instanceof Magazine);
-        System.out.println(magazine2 instanceof Magazine);
-        System.out.println(magazine3 instanceof Magazine);
+        Book.printBooks(shopList);
+        Magazine.printMagazines(shopList);
+        //System.out.println(book1 instanceof Book);
+       // System.out.println(book2 instanceof Book);
+       // System.out.println(book3 instanceof Book);
+        //System.out.println(magazine1 instanceof Magazine);
+       // System.out.println(magazine2 instanceof Magazine);
+       // System.out.println(magazine3 instanceof Magazine);
     }
 }
